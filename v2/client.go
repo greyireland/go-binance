@@ -962,3 +962,6 @@ func (c *Client) NewSubAccountListService() *SubAccountListService {
 func (c *Client) NewGetUserAsset() *GetUserAssetService {
 	return &GetUserAssetService{c: c}
 }
+func (c *Client) NewLoanOrdersService() *LoadOrdersService {
+	return &LoadOrdersService{c: c}
+}
